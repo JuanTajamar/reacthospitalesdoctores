@@ -38,11 +38,11 @@ export default class CreateHospital extends Component {
 
   render() {
     return (
-      <div >
-        <h1 className='d-flex justify-content-center'>Crear Hospital</h1>
+      <div className='bg-danger'>
+        <h1 className='d-flex justify-content-center mt-3 text-bg-warning'>Crear Hospital</h1>
         <h3 className='text-success'>{this.state.mensaje}</h3>
-        <div className='d-flex justify-content-center'>
-        <form className='w-50 h-50 ms-5 '>
+        <div className='d-flex justify-content-center '>
+        <form className='w-50 h-50 ms-5'>
             <label className='form form-label mt-3'>ID: </label>
             <input className='form form-control' ref={this.cajaId}/>
             <label className='form form-label mt-3'>Nombre: </label>
@@ -53,7 +53,7 @@ export default class CreateHospital extends Component {
             <input className='form form-control' ref={this.cajaTelefono}/>
             <label className='form form-label mt-3'>Camas: </label>
             <input className='form form-control' ref={this.cajaCamas}/>
-            <button className='btn btn-primary mt-3' onClick={this.insertHospital}>Crear</button>
+            <button className='btn btn-primary mt-3 me-5 w-25' onClick={this.insertHospital}>Crear</button>
         </form>
         </div>
       </div>
